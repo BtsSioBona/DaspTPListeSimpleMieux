@@ -1,6 +1,6 @@
 ﻿namespace TPListeDeroulante
 {
-    partial class FrmListeSimple
+    partial class FrmListeSimpleMieux
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

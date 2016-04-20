@@ -1,1 +1,8 @@
 c:\users\rahmane.a\documents\visual studio 2015\Projects\TPListeSimpleMieux\TPListeSimpleMieux\bin\Debug\TPListeSimpleMieux.exe.config
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPListeSimpleMieux\TPListeSimpleMieux\bin\Debug\TPListeSimpleMieux.exe
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPListeSimpleMieux\TPListeSimpleMieux\bin\Debug\TPListeSimpleMieux.pdb
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPListeSimpleMieux\TPListeSimpleMieux\obj\Debug\TPListeDeroulante.FrmListeSimpleMieux.resources
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPListeSimpleMieux\TPListeSimpleMieux\obj\Debug\TPListeSimpleMieux.Properties.Resources.resources
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPListeSimpleMieux\TPListeSimpleMieux\obj\Debug\TPListeSimpleMieux.csproj.GenerateResource.Cache
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPListeSimpleMieux\TPListeSimpleMieux\obj\Debug\TPListeSimpleMieux.exe
+c:\users\rahmane.a\documents\visual studio 2015\Projects\TPListeSimpleMieux\TPListeSimpleMieux\obj\Debug\TPListeSimpleMieux.pdb

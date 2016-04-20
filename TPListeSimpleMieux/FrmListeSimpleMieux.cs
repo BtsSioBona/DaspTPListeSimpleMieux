@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TPListeDeroulante
 {
-    public partial class FrmListeSimple : Form
+    public partial class FrmListeSimpleMieux : Form
     {
-        public FrmListeSimple()
+        public FrmListeSimpleMieux()
         {
             InitializeComponent();
         }
