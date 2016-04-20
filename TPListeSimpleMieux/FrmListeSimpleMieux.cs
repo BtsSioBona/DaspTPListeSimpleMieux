@@ -41,15 +41,17 @@ namespace TPListeDeroulante
             }
         }
 
+        private void txtSaisie_TextChanged(object sender, EventArgs e)
+        {
+            btnAjouter.Enabled = true;
+        }
+
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            if (txtSaisie.Text != "")
-            {
-                lstItems.Items.Add(txtSaisie.Text);
-                txtSaisie.Clear();
-            }
-            else
-                MessageBox.Show("Rien à ajouter dans la liste");
+            lstItems.Items.Add(txtSaisie.Text);
+            txtSaisie.Clear();
+            btnAjouter.Enabled = false;
+           
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
@@ -58,15 +60,16 @@ namespace TPListeDeroulante
             Va supprimer les élements sélectionnés en fonction du mode de sélection 
             Penser à chercher à améliorer la suppression
             **/
-            
-            if (rdBtn1.Checked)
-                lstItems.Items.Remove(lstItems.SelectedItem);
-            else
+
+            if (lstItems.SelectedItems.Count > 0)
             {
-                for(int i=0;i<lstItems.SelectedItems.Count; i++)
+                btnSupprimer.Enabled = true;
+                for (int i = 0; i < lstItems.SelectedItems.Count; i++)
                     lstItems.Items.Remove(lstItems.SelectedItems[i]);
                 lstItems.Items.Remove(lstItems.SelectedItem);
             }
+            else
+                btnSupprimer.Enabled = false;
         }
 
         private void btnAffiche_Click(object sender, EventArgs e)
@@ -86,5 +89,7 @@ namespace TPListeDeroulante
             else if (rdBtn3.Checked)
                 lstItems.SelectionMode = SelectionMode.MultiExtended;
         }
+
+
     }
 }

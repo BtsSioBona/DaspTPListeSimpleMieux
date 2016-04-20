@@ -112,6 +112,7 @@
             // 
             // btnSupprimer
             // 
+            this.btnSupprimer.Enabled = false;
             this.btnSupprimer.Location = new System.Drawing.Point(54, 267);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(117, 23);
@@ -126,9 +127,11 @@
             this.txtSaisie.Name = "txtSaisie";
             this.txtSaisie.Size = new System.Drawing.Size(266, 20);
             this.txtSaisie.TabIndex = 5;
+            this.txtSaisie.TextChanged += new System.EventHandler(this.txtSaisie_TextChanged);
             // 
             // btnAjouter
             // 
+            this.btnAjouter.Enabled = false;
             this.btnAjouter.Location = new System.Drawing.Point(390, 283);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
