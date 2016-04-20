@@ -96,7 +96,7 @@
             this.chkLocked.Name = "chkLocked";
             this.chkLocked.Size = new System.Drawing.Size(99, 17);
             this.chkLocked.TabIndex = 1;
-            this.chkLocked.Text = "Liste vérrouillée";
+            this.chkLocked.Text = "Liste verrouillée";
             this.chkLocked.UseVisualStyleBackColor = true;
             this.chkLocked.CheckedChanged += new System.EventHandler(this.chkLocked_CheckedChanged);
             // 

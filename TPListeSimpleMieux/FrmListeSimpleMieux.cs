@@ -36,9 +36,15 @@ namespace TPListeDeroulante
                 lstItems.Enabled = false;
             }
             else {
-                lstItems.SelectionMode = SelectionMode.One;
+                if (rdBtn1.Checked)
+                    lstItems.SelectionMode = SelectionMode.One;
+                else if (rdBtn2.Checked)
+                    lstItems.SelectionMode = SelectionMode.MultiSimple;
+                else if (rdBtn3.Checked)
+                    lstItems.SelectionMode = SelectionMode.MultiExtended;
                 lstItems.Enabled = true;
             }
+
         }
 
         private void txtSaisie_TextChanged(object sender, EventArgs e)
@@ -84,6 +90,9 @@ namespace TPListeDeroulante
 
         private void OptSelectionListe(object sender, EventArgs e)
         {
+            lstItems.SelectionMode = SelectionMode.None;
+            btnAffiche.Enabled = false;
+            btnSupprimer.Enabled = false;
             if (rdBtn1.Checked)
                 lstItems.SelectionMode = SelectionMode.One;
             else if (rdBtn2.Checked)
