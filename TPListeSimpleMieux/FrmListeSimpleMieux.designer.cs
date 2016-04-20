@@ -63,7 +63,7 @@
             this.rdBtn3.TabStop = true;
             this.rdBtn3.Text = "Étendue";
             this.rdBtn3.UseVisualStyleBackColor = true;
-            this.rdBtn3.CheckedChanged += new System.EventHandler(this.rdBtn3_CheckedChanged);
+            this.rdBtn3.CheckedChanged += new System.EventHandler(this.OptSelectionListe);
             // 
             // rdBtn2
             // 
@@ -75,7 +75,7 @@
             this.rdBtn2.TabStop = true;
             this.rdBtn2.Text = "Multiple";
             this.rdBtn2.UseVisualStyleBackColor = true;
-            this.rdBtn2.CheckedChanged += new System.EventHandler(this.rdBtn2_CheckedChanged);
+            this.rdBtn2.CheckedChanged += new System.EventHandler(this.OptSelectionListe);
             // 
             // rdBtn1
             // 
@@ -87,7 +87,7 @@
             this.rdBtn1.TabStop = true;
             this.rdBtn1.Text = "Simple";
             this.rdBtn1.UseVisualStyleBackColor = true;
-            this.rdBtn1.CheckedChanged += new System.EventHandler(this.rdBtn1_CheckedChanged);
+            this.rdBtn1.CheckedChanged += new System.EventHandler(this.OptSelectionListe);
             // 
             // chkLocked
             // 
@@ -145,7 +145,7 @@
             this.lstItems.Size = new System.Drawing.Size(266, 186);
             this.lstItems.TabIndex = 7;
             // 
-            // FrmListeSimple
+            // FrmListeSimpleMieux
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -157,7 +157,7 @@
             this.Controls.Add(this.btnAffiche);
             this.Controls.Add(this.chkLocked);
             this.Controls.Add(this.grpBoxSelection);
-            this.Name = "FrmListeSimple";
+            this.Name = "FrmListeSimpleMieux";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmListeSimple_Load);
             this.grpBoxSelection.ResumeLayout(false);

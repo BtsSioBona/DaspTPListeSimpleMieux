@@ -51,34 +51,6 @@ namespace TPListeDeroulante
             else
                 MessageBox.Show("Rien à ajouter dans la liste");
         }
-        
-        private void rdBtn1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdBtn1.Checked)
-            {
-                lstItems.SelectionMode = SelectionMode.None;
-                lstItems.SelectionMode = SelectionMode.One;
-            }
-
-        }
-
-        private void rdBtn2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdBtn2.Checked)
-            {
-                lstItems.SelectionMode = SelectionMode.None;
-                lstItems.SelectionMode = SelectionMode.MultiSimple;
-            }
-        }
-
-        private void rdBtn3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdBtn3.Checked)
-            {
-                lstItems.SelectionMode = SelectionMode.None;
-                lstItems.SelectionMode = SelectionMode.MultiExtended;
-            }
-        }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
@@ -103,6 +75,16 @@ namespace TPListeDeroulante
             foreach(string item in lstItems.SelectedItems)
                 message += item + "\n";
             MessageBox.Show(message);
+        }
+
+        private void OptSelectionListe(object sender, EventArgs e)
+        {
+            if (rdBtn1.Checked)
+                lstItems.SelectionMode = SelectionMode.One;
+            else if (rdBtn2.Checked)
+                lstItems.SelectionMode = SelectionMode.MultiSimple;
+            else if (rdBtn3.Checked)
+                lstItems.SelectionMode = SelectionMode.MultiExtended;
         }
     }
 }
