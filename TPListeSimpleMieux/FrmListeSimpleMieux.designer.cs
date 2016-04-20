@@ -102,6 +102,7 @@
             // 
             // btnAffiche
             // 
+            this.btnAffiche.Enabled = false;
             this.btnAffiche.Location = new System.Drawing.Point(54, 224);
             this.btnAffiche.Name = "btnAffiche";
             this.btnAffiche.Size = new System.Drawing.Size(117, 23);

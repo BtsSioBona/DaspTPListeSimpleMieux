@@ -56,11 +56,15 @@ namespace TPListeDeroulante
         private void lstItems_SelectedIndexChanged(object sender, EventArgs e)
         {
             btnSupprimer.Enabled = true;
+            if (lstItems.Items.Count > 0)
+                btnAffiche.Enabled = true;
+            else
+                btnAffiche.Enabled = false;
+
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-
             if (lstItems.SelectedItems.Count > 0)  //ne supprime que si il y a des éléments sélectionnées
             {
                 for (int i = 0; i < lstItems.SelectedItems.Count; i++)
