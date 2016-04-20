@@ -53,23 +53,21 @@ namespace TPListeDeroulante
             btnAjouter.Enabled = false;
            
         }
+        private void lstItems_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnSupprimer.Enabled = true;
+        }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            /** 
-            Va supprimer les élements sélectionnés en fonction du mode de sélection 
-            Penser à chercher à améliorer la suppression
-            **/
 
-            if (lstItems.SelectedItems.Count > 0)
+            if (lstItems.SelectedItems.Count > 0)  //ne supprime que si il y a des éléments sélectionnées
             {
-                btnSupprimer.Enabled = true;
                 for (int i = 0; i < lstItems.SelectedItems.Count; i++)
                     lstItems.Items.Remove(lstItems.SelectedItems[i]);
                 lstItems.Items.Remove(lstItems.SelectedItem);
-            }
-            else
                 btnSupprimer.Enabled = false;
+            }
         }
 
         private void btnAffiche_Click(object sender, EventArgs e)

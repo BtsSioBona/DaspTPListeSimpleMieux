@@ -147,6 +147,7 @@
             this.lstItems.Name = "lstItems";
             this.lstItems.Size = new System.Drawing.Size(266, 186);
             this.lstItems.TabIndex = 7;
+            this.lstItems.SelectedIndexChanged += new System.EventHandler(this.lstItems_SelectedIndexChanged);
             // 
             // FrmListeSimpleMieux
             // 
