@@ -162,8 +162,9 @@
             this.Controls.Add(this.btnAffiche);
             this.Controls.Add(this.chkLocked);
             this.Controls.Add(this.grpBoxSelection);
+            this.MaximizeBox = false;
             this.Name = "FrmListeSimpleMieux";
-            this.Text = "Form1";
+            this.Text = "Ma petite liste";
             this.Load += new System.EventHandler(this.FrmListeSimple_Load);
             this.grpBoxSelection.ResumeLayout(false);
             this.grpBoxSelection.PerformLayout();
